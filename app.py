@@ -9,7 +9,7 @@ async def shorten_url(data: dict):
     long_url = data.get("long_url")
     short_code = create_short_url(long_url)
 
-    # 🔥 INSERT INTO DATABASE to make sure it gets added
+    # 🔥 INSERT INTO DATABASE to make sure it gets added - to demo pull
     db.execute(
         """
         INSERT INTO urls (long_url, short_code)
